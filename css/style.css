@@ -16,6 +16,8 @@ body{
     background-color: red;
     margin: auto;
     height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 23px;
 }
 
 .message{
@@ -23,6 +25,7 @@ body{
     padding: 10px;
     margin: 17px 12px;
     border: 2px solid black;
+    width: 24%;
 }
 
 .left{
