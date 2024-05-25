@@ -1,61 +1,100 @@
-.logo{
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #82d6d2, #23777a);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Logo Styles */
+.logo {
     display: block;
-    margin: auto;
+    margin: 20px auto;
     width: 50px;
     height: 50px;
 }
 
-body{
-    background-image: linear-gradient(rgb(197, 99, 99),purple,);
-    background-color: aqua;
-}
-
-
-.container{
-    max-width: 955px;
-    background-color: red;
-    margin: auto;
-    height: 60vh;
+/* Container Styles */
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
     overflow-y: auto;
-    margin-bottom: 23px;
-}
-
-.message{
-    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin: 17px 12px;
-    border: 2px solid black;
-    width: 24%;
 }
 
-.left{
+/* Message Styles */
+.message {
+    padding: 10px 15px;
+    margin: 10px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 70%;
+    clear: both;
+    position: relative;
+}
+
+.message.left {
+    background-color: #d1ffd6;
+    border: 1px solid #b3ffbb;
     float: left;
-    clear: both;
 }
 
-.right{
+.message.right {
+    background-color: #d0ebff;
+    border: 1px solid #a1d8ff;
     float: right;
-    clear: both;
 }
 
-#send-container{
-    display: block;
-    margin: auto;
-    text-align: center;
-    max-width: 985px;
+/* Send Container Styles */
+#send-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-
+    max-width: 600px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#messageInp{
-    width: 92%;
-    border: 2px solid black;  
-    height: 34px;  
+/* Message Input Styles */
+#messageInp {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-.btn{
+#messageInp:focus {
+    border-color: #82d6d2;
+}
+
+/* Button Styles */
+.btn {
     cursor: pointer;
-    border: 2px solid black;
-    background-color: white;
-    height: 34px;
+    border: 1px solid #82d6d2;
+    background-color: #82d6d2;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #23777a;
+    border-color: #23777a;
+}
+
